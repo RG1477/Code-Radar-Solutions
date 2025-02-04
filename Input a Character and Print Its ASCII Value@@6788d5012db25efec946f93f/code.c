@@ -4,7 +4,7 @@ int main() {
     char ch;
 
     // Input a single character
-    printf("Enter a character: ");
+    printf(" ");
     scanf("%c", &ch);
 
     // Print the ASCII value of the character
