@@ -17,9 +17,9 @@ int main() {
 
     // Print result as true or false
     if (result) {
-        printf("true\n");
+        printf("True\n");
     } else {
-        printf("false\n");
+        printf("False\n");
     }
 
     return 0;
