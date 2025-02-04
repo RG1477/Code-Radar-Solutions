@@ -5,10 +5,10 @@ int main() {
     bool A, B, result;  // Boolean variables
 
     // Input two boolean values (0 for false, 1 for true)
-    printf("Enter first boolean value (0 for false, 1 for true): ");
+    printf(" ");
     scanf("%d", &A);
 
-    printf("Enter second boolean value (0 for false, 1 for true): ");
+    printf(" ");
     scanf("%d", &B);
 
     // Logical OR operation
