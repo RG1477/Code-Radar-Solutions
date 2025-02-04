@@ -11,8 +11,8 @@ int main() {
     printf("Enter second boolean value (0 for false, 1 for true): ");
     scanf("%d", &B);
 
-    // Logical AND operation
-    result = A && B;
+    // Logical OR operation
+    result = A || B;
 
     // Print result as true or false
     if (result) {
