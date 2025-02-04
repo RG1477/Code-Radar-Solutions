@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include <stdbool.h>  // Include for bool, true, false
 
 int main() {
     int num1, num2;
+    bool result;  // Boolean variable
 
     // Input two numbers
     
@@ -10,13 +12,14 @@ int main() {
     
     scanf("%d", &num2);
 
-    // Check which number is greater
-    if (num1 > num2) {
-        printf("%d is greater than %d\n", num1, num2);
-    } else if (num2 > num1) {
-        printf("%d is greater than %d\n", num2, num1);
+    // Check if num1 is greater than num2
+    result = (num1 > num2);
+
+    // Print result as true or false
+    if (result) {
+        printf("true\n");
     } else {
-        printf("Both numbers are equal.\n");
+        printf("false\n");
     }
 
     return 0;
