@@ -9,9 +9,9 @@ int main() {
     
     // Check logical NOT operation
     if (!(num1 > 0)) {
-        printf("true\n");
+        printf("True\n");
     } else {
-        printf("false\n");
+        printf("False\n");
     }
     
     return 0;
