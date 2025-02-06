@@ -9,9 +9,9 @@ int main() {
     
     // Check if both numbers are greater than zero
     if (num1 > 0 && num2 > 0) {
-        printf("Both numbers are greater than zero.\n");
+        printf("True");
     } else {
-        printf("At least one number is not greater than zero.\n");
+        printf("False");
     }
     
     return 0;
