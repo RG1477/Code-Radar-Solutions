@@ -1,20 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    int num1, num2, result;
-    
-    // Input two integers
-    
-    
-    scanf("%d", &num1);
-    
-    scanf("%d", &num2);
-    
-    // Perform bitwise XOR
-    result = num1 ^ num2;
-    
-    // Print the result in decimal
-    printf("%d\n", num1, num2, result);
-    
+    int num, shift;
+    scanf("%d %d", &num, &shift);
+    printf("%d\n", num >> shift);  // Bitwise right shift operation
     return 0;
 }
