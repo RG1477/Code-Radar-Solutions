@@ -1,25 +1,18 @@
 #include <stdio.h>
-#include <stdbool.h>  // Include for bool, true, false
 
 int main() {
-    bool A,B, result;  // Boolean variables
-
-    // Input two boolean values (0 for false, 1 for true)
-    printf(" ");
-    scanf("%d", &A);
-
-    printf("");
-    scanf("%d", &B);
-
-    // Logical OR operation
-    result = A||B;
-
-    // Print result as true or false
-    if (result) {
-        printf("True\n");
+    int num1, num2;
+    
+    // Input two numbers
+    printf("Enter two numbers: ");
+    scanf("%d %d", &num1, &num2);
+    
+    // Check if both numbers are greater than zero
+    if (num1 > 0 && num2 > 0) {
+        printf("Both numbers are greater than zero.\n");
     } else {
-        printf("False\n");
+        printf("At least one number is not greater than zero.\n");
     }
-
+    
     return 0;
 }
