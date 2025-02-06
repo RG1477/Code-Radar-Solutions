@@ -4,7 +4,7 @@ int main() {
     int num1, num2, result;
     
     // Input two numbers
-    printf("Enter two numbers: ");
+    
     scanf("%d %d", &num1, &num2);
     
     // Perform bitwise AND operation
