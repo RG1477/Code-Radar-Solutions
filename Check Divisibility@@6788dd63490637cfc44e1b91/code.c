@@ -6,7 +6,7 @@ int main() {
     scanf("%d %d", &num, &divisor);
     
     if (divisor == 0) {
-        printf("Error: Division by zero\n");
+        printf("Division by zero\n");
     } else {
         printf("%s\n", (num % divisor == 0) ? "Divisible" : "Not Divisible");
     }
