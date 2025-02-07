@@ -4,7 +4,7 @@ int main() {
     int a, b;
     scanf("%d %d", &a, &b);
 
-    printf("%s\n", (a > b) ? "larger" : (a < b) ? "Larger" : "Equal");
+    printf("%s\n", (a > b) ? "First" : (a < b) ? "Second" : "Equal");
 
     return 0;
 }
