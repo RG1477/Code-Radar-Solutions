@@ -5,9 +5,9 @@ int main() {
     scanf("%d %d", &a, &b);
 
     if (a > b) {
-        printf("%d is larger\n", a);
+        printf("%d is larger\n");
     } else if (a < b) {
-        printf("%d is larger\n", b);
+        printf("%d is larger\n");
     } else {
         printf("Equal\n");
     }
