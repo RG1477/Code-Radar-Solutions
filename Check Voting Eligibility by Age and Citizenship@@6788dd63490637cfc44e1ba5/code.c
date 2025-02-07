@@ -1,12 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    int age;
-    char citizen;
-    
-    scanf("%d %c", &age, &citizen);
+    int age, citizen;
 
-    printf("%s\n", (age >= 18 && (citizen == 'Y' || citizen == 'y')) ? "Eligible" : "Not Eligible");
+    // Taking input for age and citizenship (1 for citizen, 0 for non-citizen)
+    scanf("%d %d", &age, &citizen);
+
+    // Check voting eligibility
+    printf("%s\n", (age >= 18 && citizen == 1) ? "Eligible" : "Not Eligible");
 
     return 0;
 }
