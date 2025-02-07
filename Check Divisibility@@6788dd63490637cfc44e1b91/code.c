@@ -2,7 +2,14 @@
 
 int main() {
     int num, divisor;
+    
     scanf("%d %d", &num, &divisor);
-    printf("%s\n", (num % divisor == 0) ? "divisible" : "not divisible");
+    
+    if (divisor == 0) {
+        printf("Error: Division by zero\n");
+    } else {
+        printf("%s\n", (num % divisor == 0) ? "Divisible" : "Not Divisible");
+    }
+    
     return 0;
 }
