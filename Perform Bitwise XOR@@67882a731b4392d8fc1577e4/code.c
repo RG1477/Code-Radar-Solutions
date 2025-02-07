@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    int num, shift;
-    scanf("%d %d", &num, &shift);
-    printf("%d\n", num >> shift);  // Bitwise right shift operation
+    int a, b;
+    scanf("%d %d", &a, &b);
+    printf("%d\n", a ^ b);  // Bitwise XOR operation
     return 0;
 }
