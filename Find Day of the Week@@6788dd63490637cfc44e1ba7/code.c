@@ -12,7 +12,7 @@ int main() {
         case 5: printf("Friday\n"); break;
         case 6: printf("Saturday\n"); break;
         case 7: printf("Sunday\n"); break;
-        default: printf("invalid\n"); // If the input is not between 1-7
+        default: printf("Invalid\n"); // If the input is not between 1-7
     }
 
     return 0;
