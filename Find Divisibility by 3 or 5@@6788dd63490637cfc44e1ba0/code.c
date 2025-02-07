@@ -5,13 +5,13 @@ int main() {
     scanf("%d", &num);
 
     if (num % 3 == 0 && num % 5 == 0) {
-        printf("both\n");
+        printf("Both\n");
     } else if (num % 3 == 0) {
-        printf("three\n");
+        printf("Three\n");
     } else if (num % 5 == 0) {
-        printf("five\n");
+        printf("Five\n");
     } else {
-        printf("neither\n");
+        printf("Neither\n");
     }
 
     return 0;
