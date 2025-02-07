@@ -1,15 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    int num, divisor;
-    
-    scanf("%d %d", &num, &divisor);
-    
-    if (divisor == 0) {
-        printf("Division by zero\n");
-    } else {
-        printf("%s\n", (num % divisor == 0) ? "Divisible" : "Not Divisible");
-    }
-    
+    int num;
+    scanf("%d", &num);
+    printf("%s\n", (num % 5 == 0 && num % 11 == 0) ? "Divisible" : "Not Divisible");
     return 0;
 }
