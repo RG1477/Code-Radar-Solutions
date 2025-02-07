@@ -6,11 +6,11 @@ int main() {
     scanf("%d", &num);
 
     if (num < 0) {
-        printf("No"); // Negative numbers cannot be perfect squares
+        printf("not square\n"); // Negative numbers cannot be perfect squares
         return 0;
     }
 
-    root = sqrt(num); // Find the square root of the number
+    root = (int)sqrt(num); // Find the integer square root
 
     printf("%s\n", (root * root == num) ? "Yes" : "No");
 
