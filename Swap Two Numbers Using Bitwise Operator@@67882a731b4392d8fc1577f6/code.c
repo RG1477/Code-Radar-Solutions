@@ -1,13 +1,18 @@
 #include <stdio.h>
 
 int main() {
-    int a = 5, b = 10;
+    int a, b;
 
-    printf("Before swapping: a = %d, b = %d\n", a, b);
+    // Taking input from the user
+   
+    scanf("%d %d", &a, &b);
 
-    a = a ^ b;  // Step 1: a becomes a ^ b
-    b = a ^ b;  // Step 2: b becomes a
-    a = a ^ b;  // Step 3: a becomes b
+   
+
+    // XOR Swap Algorithm
+    a = a ^ b;
+    b = a ^ b;
+    a = a ^ b;
 
     printf("a = %d, b = %d\n", a, b);
 
