@@ -1,20 +1,16 @@
 #include <stdio.h>
 
 int main() {
-    int num, n;
+    int number, position;
 
     // Input the number and the bit position
-    
-    scanf("%d", &num);
-    
-    
-    scanf("%d", &n);
+    scanf("%d %d", &number, &position);
 
     // Set the nth bit
-    num = num | (1 << n);
+    int result = number | (1 << position);
 
-    // Print the updated number
-    printf("%d\n", n, num);
+    // Output the updated number
+    printf("%d\n", result);
 
     return 0;
 }
