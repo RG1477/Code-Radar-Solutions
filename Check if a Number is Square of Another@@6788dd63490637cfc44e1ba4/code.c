@@ -6,7 +6,7 @@ int main() {
     scanf("%d", &num);
 
     if (num < 0) {
-        printf("no\n"); // Negative numbers cannot be perfect squares
+        printf("No\n"); // Negative numbers cannot be perfect squares
         return 0;
     }
 
