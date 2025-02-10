@@ -4,14 +4,22 @@
 int main() {
     double num1, num2, result;
     char op;
-    int intNum1, intNum2;  // For modulus operation
+    int intNum1, intNum2;  // For integer modulus
 
     while (1) {
         printf("\nEnter an expression (e.g., 5 + 3) or 'q' to quit: ");
-        
-        if (scanf("%lf %c %lf", &num1, &op, &num2) != 3) {
+
+        // Read input and check if user entered 'q' to quit
+        if (scanf(" %c", &op) == 1 && op == 'q') {
             printf("Exiting...\n");
-            break; // Exit loop if input is invalid
+            break;
+        }
+
+        // Read two numbers after the operator
+        if (scanf("%lf %lf", &num1, &num2) != 2) {
+            printf("Invalid input! Try again.\n");
+            while (getchar() != '\n'); // Clear input buffer
+            continue;
         }
 
         switch (op) {
