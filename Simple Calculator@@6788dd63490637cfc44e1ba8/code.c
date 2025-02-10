@@ -5,8 +5,11 @@ int main() {
     char op;
 
     // Taking input from the user
-    printf("");
-    scanf("%lf %c %lf", &num1, &op, &num2);
+    printf("Enter an expression (e.g., 5 + 3): ");
+    if (scanf("%lf %c %lf", &num1, &op, &num2) != 3) {
+        printf("Error: Invalid input format.\n");
+        return 1;
+    }
 
     // Performing the operation based on the operator
     switch (op) {
