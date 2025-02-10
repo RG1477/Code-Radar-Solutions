@@ -5,7 +5,11 @@ int main() {
     char op;
 
     // Taking input: first number, operator, second number
-    scanf("%lf %c %lf", &num1, &op, &num2);
+    printf("Enter an expression (e.g., 5 + 3): ");
+    if (scanf("%lf %c %lf", &num1, &op, &num2) != 3) {
+        printf("Invalid input\n");
+        return 1;
+    }
 
     // Performing the operation based on the operator
     switch (op) {
@@ -16,17 +20,17 @@ int main() {
             if (num2 != 0) 
                 result = num1 / num2;
             else {
-                printf("Error\n"); // Handling division by zero
-                return 0;
+                printf("Error: Division by zero\n");
+                return 1;
             }
             break;
         default: 
-            printf("Invalid\n"); // Handling invalid operators
-            return 0;
+            printf("Error: Invalid operator\n");
+            return 1;
     }
 
     // Printing the result
-    printf("%.2lf\n", result);
+    printf("Result: %.2lf\n", result);
 
     return 0;
-}
+}Loading Code...
