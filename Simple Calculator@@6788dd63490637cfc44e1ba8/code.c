@@ -33,4 +33,4 @@ int main() {
     printf("Result: %.2lf\n", result);
 
     return 0;
-}Loading Code...
+}
