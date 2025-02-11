@@ -7,7 +7,7 @@ void number_pyramid(int n) {
             printf("  ");
         }
         // Print numbers with spaces
-        for (int k = 1; k <= (2 * i - 1); k++) {
+        for (int k = 1; k <= i; k++) {
             printf("%d ", k);
         }
         printf("\n");
@@ -16,7 +16,7 @@ void number_pyramid(int n) {
 
 int main() {
     int n;
-  
+   
     scanf("%d", &n);
     number_pyramid(n);
     return 0;
