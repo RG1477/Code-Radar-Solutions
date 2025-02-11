@@ -29,3 +29,4 @@ int main() {
     }
 
     printf("%.f\n", result);
+}
