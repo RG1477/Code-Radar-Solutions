@@ -16,7 +16,7 @@ void number_pyramid(int n) {
 
 int main() {
     int n;
-   
+  
     scanf("%d", &n);
     number_pyramid(n);
     return 0;
