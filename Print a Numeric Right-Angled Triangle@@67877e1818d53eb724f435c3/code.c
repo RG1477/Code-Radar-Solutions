@@ -11,7 +11,7 @@ void numeric_triangle(int n) {
 
 int main() {
     int n;
-    printf("Enter the number of rows: ");
+    
     scanf("%d", &n);
     numeric_triangle(n);
     return 0;
