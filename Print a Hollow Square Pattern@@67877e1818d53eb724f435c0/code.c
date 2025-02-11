@@ -1,21 +1,18 @@
 #include <stdio.h>
 
 int main() {
-    int n;
+    int size, i, j;
 
-    // Ask the user for the size of the square
-    
-    scanf("%d", &n);
 
-    // Outer loop for rows
-    for (int i = 1; i <= n; i++) {
-        // Inner loop for columns
-        for (int j = 1; j <= n; j++) {
-            // Print stars for first/last row and first/last column
-            if (i == 1 || i == n || j == 1 || j == n) {
-                printf("* ");
+    scanf("%d", &size);
+
+    for (i = 1; i <= size; i++) {
+        for (j = 1; j <= size; j++) {
+            // Print '*' only on the border positions
+            if (i == 1 || i == size || j == 1 || j == size) {
+                printf("*");
             } else {
-                printf("  "); // Space inside the square
+                printf(" ");
             }
         }
         printf("\n");
