@@ -15,7 +15,7 @@ void mirrored_triangle(int n) {
 }
 
 int main() {
-    int n = 5; // Change this value for different sizes
+    int n = 4; // Change this value for different sizes
     mirrored_triangle(n);
     return 0;
 }
