@@ -1,12 +1,14 @@
 #include <stdio.h>
 
 int main() {
-    int n, sum;
-    
-    scanf("%d", &n);
+    int n, sum = 0;  // Initialize sum to 0
+    printf("Enter a number: ");
+    scanf("%d", &n);  // Take input from the user
 
-    sum = (n * (n + 1)) / 2; // Using the formula
+    for (int i = 1; i <= n; i++) {
+        sum += i;  // Add i to sum
+    }
 
-    printf("%d\n", n, sum);
+    printf("Sum of first %d natural numbers = %d\n", n, sum);  // Print result
     return 0;
 }
