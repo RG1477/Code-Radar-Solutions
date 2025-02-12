@@ -7,14 +7,9 @@ void printAlphabetPyramid(int n) {
             printf(" ");
         }
 
-        // Print ascending alphabets
+        // Print alphabets with spaces
         for (char ch = 'A'; ch <= 'A' + i; ch++) {
-            printf("%c", ch);
-        }
-
-        // Print descending alphabets
-        for (char ch = 'A' + i - 1; ch >= 'A'; ch--) {
-            printf("%c", ch);
+            printf("%c ", ch);
         }
 
         printf("\n");
@@ -23,7 +18,7 @@ void printAlphabetPyramid(int n) {
 
 int main() {
     int n;
-    
+   
     scanf("%d", &n);
 
     printAlphabetPyramid(n);
