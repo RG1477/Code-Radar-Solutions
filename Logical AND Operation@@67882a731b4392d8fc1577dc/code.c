@@ -2,17 +2,13 @@
 
 int main() {
     int num1, num2;
-    
-    // Input two numbers
-    
-    scanf("%d %d", &num1, &num2);
-    
-    // Check if both numbers are greater than zero
-    if (num1 > 0 && num2 > 0) {
-        printf("True");
-    } else {
-        printf("False");
+    scanf("%d %d", &num1 &num2);
+    if(num1>0 && num2>0;)
+    {
+        printf("%d" True);
     }
-    
+    else{
+        printf("%d" False);
+    }
     return 0;
 }
