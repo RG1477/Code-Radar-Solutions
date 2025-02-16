@@ -1,9 +1,9 @@
 #include <stdio.h>
-#include <stdbool.h>  // Include for bool, true, false
+ // Include for bool, true, false
 
 int main() {
     int num1, num2;
-    bool result;  // Boolean variable
+     // Boolean variable
 
     // Input two numbers
     
