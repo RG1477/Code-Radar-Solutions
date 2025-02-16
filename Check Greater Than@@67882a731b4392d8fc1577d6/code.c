@@ -13,10 +13,10 @@ int main() {
     scanf("%d", &num2);
 
     // Check if num1 is greater than num2
-    result = (num1 > num2);
+    
 
     // Print result as true or false
-    if (result) {
+    if (num1>num2) {
         printf("True\n");
     } else {
         printf("False\n");
