@@ -25,11 +25,10 @@ void rotateArray(int arr[], int n, int k) {
     reverse(arr, k, n - 1);
 }
 
-// Function to print the array
+// Function to print the array (one number per line)
 void printArray(int arr[], int n) {
     for (int i = 0; i < n; i++)
-        printf("%d ", arr[i]);
-    printf("\n");
+        printf("%d\n", arr[i]);  // Print each number on a new line
 }
 
 // Main function
@@ -50,7 +49,7 @@ int main() {
     // Rotate array
     rotateArray(arr, n, k);
 
-    // Print rotated array
+    // Print rotated array (one number per line)
     printArray(arr, n);
 
     return 0;
