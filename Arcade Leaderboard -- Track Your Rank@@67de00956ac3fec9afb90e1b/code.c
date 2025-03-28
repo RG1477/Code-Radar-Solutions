@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-void computeRanks(int leaderboard[], int n, int playerScores[], int m) {
-    int ranks[n], rank = 1;
+void computeRanks(int *leaderboard, int n, int *playerScores, int m) {
+    int *ranks = (int *)malloc(n * sizeof(int));
+    int rank = 1;
 
     // Assign ranks to leaderboard (Dense Ranking)
     ranks[0] = rank;
@@ -21,6 +23,8 @@ void computeRanks(int leaderboard[], int n, int playerScores[], int m) {
         
         printf("%d\n", index == -1 ? 1 : ranks[index] + 1);
     }
+
+    free(ranks); // Free allocated memory
 }
 
 int main() {
@@ -28,18 +32,22 @@ int main() {
     
     // Read leaderboard size and scores
     scanf("%d", &n);
-    int leaderboard[n];
+    int *leaderboard = (int *)malloc(n * sizeof(int));
     for (int i = 0; i < n; i++)
         scanf("%d", &leaderboard[i]);
 
     // Read number of games and player scores
     scanf("%d", &m);
-    int playerScores[m];
+    int *playerScores = (int *)malloc(m * sizeof(int));
     for (int i = 0; i < m; i++)
         scanf("%d", &playerScores[i]);
 
     // Compute ranks after each game
     computeRanks(leaderboard, n, playerScores, m);
+
+    // Free allocated memory
+    free(leaderboard);
+    free(playerScores);
 
     return 0;
 }
