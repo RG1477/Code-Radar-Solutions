@@ -1,16 +1,11 @@
 #include <stdio.h>
 
-int main() {
-    int num1, num2, num3;
-    double average;
+int main()
+{
+    float n1,n2,n3,avg;
+    scanf("%f %f %f", &n1, &n2 ,&n3);
+    avg=(n1+n2+n3)/3;
+    printf("%f",avg);
 
-    // Read three integers
-    scanf("%d %d %d", &num1, &num2, &num3);
-
-    // Calculate the average
-    average = (num1 + num2 + num3) / 3.0;
-
-    // Print the average with 2 decimal places
-    printf("Average: %.2lf\n", average);
-
-    return 0;}
+    return 0;
+}
